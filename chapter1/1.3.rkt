@@ -1,14 +1,10 @@
 #lang racket
 
+(require "../common.rkt")
 (require rackunit)
 
 ; (define (sum-of-biggest-squares a b c)
 ;   (sum-of-squares (max a b) (max (min a b) c)))
-
-(define (square a) (* a a))
-
-(define (sum-of-squares a b)
-  (+ (square a) (square b)))
 
 (define (sum-of-biggest-squares a b c)
   (cond ((= (min a b c) a) (sum-of-squares b c))
