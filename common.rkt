@@ -1,6 +1,6 @@
 #lang racket
 
-(provide square sum-of-squares average cube)
+(provide square sum-of-squares average cube halve double)
 
 (define (square a)
  (* a a))
@@ -13,3 +13,7 @@
 
 (define (cube a)
     (* a a a))
+
+(define (halve num) (/ num 2))
+
+(define (double num) (* num 2))
